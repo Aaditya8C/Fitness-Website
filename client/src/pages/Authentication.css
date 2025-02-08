@@ -1,0 +1,71 @@
+.container {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  background: var(--bg-color); /* Background color based on CSS variable */
+}
+
+.left {
+  flex: 1;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  width: 70px;
+  top: 10px;
+  left: 20px;
+  z-index: 10;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw;  /* Full width of the viewport */
+  object-fit: cover;
+}
+
+.right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 16px;
+  align-items: flex-start;  /* Align items to the left */
+  justify-content: flex-start;  /* Align content to the top */
+  margin-left: -40px;  /* Push everything more to the left */
+  margin-top: 40px;  /* Push everything more to the top */
+}
+
+.text {
+  font-size: 16px;
+  text-align: left;
+  color: #ffffff;  /* Updated text color (replace with your preferred color) */
+  margin-top: 16px;
+}
+
+.text-button {
+  color: #007bff;  /* Updated text-button color (replace with your preferred color) */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .text {
+    font-size: 14px;  /* Adjust text size for smaller screens */
+  }
+}

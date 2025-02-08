@@ -1,0 +1,79 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .contact-right {
+    max-width: 600px; /* Limiting the form width */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Making the form responsive */
+  }
+  
+  .contact-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .contact-textarea {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical; /* Allow textarea to expand vertically */
+  }
+  
+  .contact-button {
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .contact-button:hover {
+    background-color: #357abd;
+  }
+  
+  .contact-thank-you-message {
+    text-align: center;
+  }
+  
+  .thank-you-title {
+    font-size: 28px;
+    color: green;
+  }
+  
+  .thank-you-message {
+    font-size: 16px;
+    color: #555;
+  }
+  

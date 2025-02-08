@@ -1,0 +1,81 @@
+/* Container */
+.food-container {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Heading */
+  .food-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #007bff;
+  }
+  
+  /* Input Field */
+  .food-input {
+    width: 80%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Button */
+  .food-button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .food-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Loading Message */
+  .food-loading {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-top: 1rem;
+  }
+  
+  /* Error Message */
+  .food-error {
+    font-size: 1rem;
+    color: #dc3545;
+    margin-top: 1rem;
+  }
+  
+  /* Nutrition Data */
+  .food-data {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+  
+  .food-data-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #495057;
+  }
+  
+  .food-data p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .food-data p strong {
+    font-weight: bold;
+  }
+  
