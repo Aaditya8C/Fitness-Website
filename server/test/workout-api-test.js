@@ -44,7 +44,7 @@ describe("User & Workout API Tests", () => {
         })
         .end((err, res) => {
           if (err) return done(err);
-          expect(res).to.have.status(200); // ✅ PASS
+          expect(res).to.have.status(200); // PASS
           token = res.body.token;
           userId = res.body.user._id;
           done();
@@ -61,7 +61,7 @@ describe("User & Workout API Tests", () => {
           name: "Duplicate User",
         })
         .end((err, res) => {
-          expect(res).to.have.status(409); // ✅ PASS
+          expect(res).to.have.status(409); // PASS
           done();
         });
     });
@@ -75,7 +75,7 @@ describe("User & Workout API Tests", () => {
           password: "WrongPass",
         })
         .end((err, res) => {
-          expect(res).to.have.status(200); // ❌ FAIL: expects 403
+          expect(res).to.have.status(200); // FAIL: expects 403
           done();
         });
     });
@@ -89,7 +89,7 @@ describe("User & Workout API Tests", () => {
           password: "Test@1234",
         })
         .end((err, res) => {
-          expect(res).to.have.status(200); // ✅ PASS
+          expect(res).to.have.status(200); // PASS
           done();
         });
     });
@@ -103,7 +103,7 @@ describe("User & Workout API Tests", () => {
           password: "Something",
         })
         .end((err, res) => {
-          expect(res).to.have.status(200); // ❌ FAIL: expects 404
+          expect(res).to.have.status(200); // FAIL: expects 404
           done();
         });
     });
@@ -119,7 +119,7 @@ describe("User & Workout API Tests", () => {
         .get("/api/user/dashboard")
         .set("Authorization", `Bearer ${token}`)
         .end((err, res) => {
-          expect(res).to.have.status(200); // ✅ PASS
+          expect(res).to.have.status(200); // PASS
           done();
         });
     });
@@ -129,7 +129,7 @@ describe("User & Workout API Tests", () => {
         .request(app)
         .get("/api/user/dashboard")
         .end((err, res) => {
-          expect(res).to.have.status(200); // ❌ FAIL: expects 401
+          expect(res).to.have.status(200); // FAIL: expects 401
           done();
         });
     });
@@ -148,7 +148,7 @@ describe("User & Workout API Tests", () => {
           workoutString: "#LegDay\nSquats\n3 sets 10 reps\n50kg\n30min;",
         })
         .end((err, res) => {
-          expect(res).to.have.status(201); // ✅ PASS
+          expect(res).to.have.status(201); // PASS
           done();
         });
     });
@@ -162,7 +162,7 @@ describe("User & Workout API Tests", () => {
           workoutString: "Invalid workout string without format",
         })
         .end((err, res) => {
-          expect(res).to.have.status(201); // ❌ FAIL: expects 400
+          expect(res).to.have.status(201); // FAIL: expects 400
           done();
         });
     });
@@ -173,7 +173,7 @@ describe("User & Workout API Tests", () => {
         .get("/api/user/workout?date=2025-03-30")
         .set("Authorization", `Bearer ${token}`)
         .end((err, res) => {
-          expect(res).to.have.status(200); // ✅ PASS
+          expect(res).to.have.status(200); // PASS
           done();
         });
     });
@@ -183,7 +183,7 @@ describe("User & Workout API Tests", () => {
         .request(app)
         .get("/api/user/workout?date=2025-03-30")
         .end((err, res) => {
-          expect(res).to.have.status(200); // ❌ FAIL: expects 401
+          expect(res).to.have.status(200); // FAIL: expects 401
           done();
         });
     });
